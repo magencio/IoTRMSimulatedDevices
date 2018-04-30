@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  preformhopper:
+    environment: 
+      - IoTHubAddress=someiothub.azure-devices.net
+      - DeviceId=Preform-Hopper-01
+      - DevicePrimaryKey=tGftyzo55HSI9HqWUyuJgY43SUOtWmLig/Y/TQ4UvtA=
+      - Schema=preform-hopper-schema;v1 
+      - JsonSchemaFile=./preform-hopper-schema-v1.json
+  
+  rinser:
+    environment: 
+      - IoTHubAddress=someiothub.azure-devices.net
+      - DeviceId=Rinser-01
+      - DevicePrimaryKey=M47G4sRF5q0k15CksYJ0oQIKShHq0djOM7lSRuGnocE=
+      - Schema=rinser-schema;v1 
+      - JsonSchemaFile=./rinser-schema-v1.json
+
+  filler:
+    environment: 
+      - IoTHubAddress=someiothub.azure-devices.net
+      - DeviceId=Filler-01
+      - DevicePrimaryKey=oYQYPhUfg3yvoKSTtirMtih36CwuFAWk0fk4EbtSqDU=
+      - Schema=filler-schema;v1 
+      - JsonSchemaFile=./filler-schema-v1.json

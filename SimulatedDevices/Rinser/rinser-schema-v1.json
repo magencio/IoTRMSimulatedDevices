@@ -1,0 +1,30 @@
+﻿{
+  "Protocol": "AMQP",
+  "SupportedMethods": "Turn On,Turn Off",
+  "Telemetry": {
+    "RinserSchema": {
+      "Interval": "00:00:05",
+      "MessageTemplate": "{\"online\":${online},\"running\":${running},\"producing\":${producing},\"emptybottlecounterin\":${emptybottlecounterin},\"emptybottlecounterout\":${emptybottlecounterout},\"machinespeed\":${machinespeed},\"electricityconsumption\":${electricityconsumption},\"waterconsumption\":${waterconsumption}}",
+      "MessageSchema": {
+        "Name": "rinser-schema;v1",
+        "Format": "JSON",
+        "Fields": {
+          "online": "Bool",
+          "running": "Bool",
+          "producing": "Bool",
+          "emptybottlecounterin": "Double",
+          "emptybottlecounterout": "Double",
+          "machinespeed": "Double",
+          "electricityconsumption": "Double",
+          "waterconsumption": "Double"
+        }
+      }
+    }
+  },
+  "Type": "Rinser",
+  "Firmware": "1.0",
+  "FirmwareUpdateStatus": "0",
+  "Location": "Building 1",
+  "Latitude": "7.946527",
+  "Longitude": "-1.023194"
+}

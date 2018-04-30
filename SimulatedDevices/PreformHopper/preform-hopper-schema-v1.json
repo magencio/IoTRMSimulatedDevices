@@ -1,0 +1,28 @@
+﻿{
+  "Protocol": "AMQP",
+  "SupportedMethods": "Turn On,Turn Off",
+  "Telemetry": {
+    "PreformHopperSchema": {
+      "Interval": "00:00:05",
+      "MessageTemplate": "{\"online\":${online},\"running\":${running},\"producing\":${producing},\"humanpresence\":${humanpresence},\"counterout\":${counterout},\"rightquality\":${rightquality}}",
+      "MessageSchema": {
+        "Name": "preform-hopper-schema;v1",
+        "Format": "JSON",
+        "Fields": {
+          "online": "Bool",
+          "running": "Bool",
+          "producing": "Bool",
+          "humanpresence": "Bool",
+          "counterout": "Double",
+          "rightquality": "Double"
+        }
+      }
+    }
+  },
+  "Type": "Preform Hopper",
+  "Firmware": "1.0",
+  "FirmwareUpdateStatus": "0",
+  "Location": "Building 1",
+  "Latitude": "7.946527",
+  "Longitude": "-1.023194"
+}

@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SimulatedDevices/.vs
+/SimulatedDevices/PreformHopper/.vs/PreformHopper/v15/Server/sqlite3

@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  preformhopper:
+    image: preformhopper
+    build:
+      context: .
+      dockerfile: PreformHopper/Dockerfile
+  rinser:
+    image: rinser
+    build:
+      context: .
+      dockerfile: Rinser/Dockerfile
+  filler:
+    image: filler
+    build:
+      context: .
+      dockerfile: Filler/Dockerfile
+

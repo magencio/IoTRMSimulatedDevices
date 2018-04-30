@@ -1,0 +1,37 @@
+﻿{
+  "Protocol": "AMQP",
+  "SupportedMethods": "Turn On,Turn Off",
+  "Telemetry": {
+    "FillerSchema": {
+      "Interval": "00:00:05",
+      "MessageTemplate": "{\"online\":${online},\"running\":${running},\"producing\":${producing},\"fullbottlecounterin\":${fullbottlecounterin},\"fullbottlecounterout\":${fullbottlecounterout},\"bowltemperature\":${bowltemperature},\"bowlpressure\":${bowlpressure},\"beverageinfeedvolume\":${beverageinfeedvolume},\"co2consumption\":${co2consumption},\"qainspectorlevel\":${qainspectorlevel},\"qainspectorcap\":${qainspectorcap},\"qacapcounter\":${qacapcounter},\"machinespeed\":${machinespeed},\"electricityconsumption\":${electricityconsumption},\"waterconsumption\":${waterconsumption}}",
+      "MessageSchema": {
+        "Name": "filler-schema;v1",
+        "Format": "JSON",
+        "Fields": {
+          "online": "Bool",
+          "running": "Bool",
+          "producing": "Bool",
+          "fullbottlecounterin": "Double",
+          "fullbottlecounterout": "Double",
+          "bowltemperature": "Double",
+          "bowlpressure": "Double",
+          "beverageinfeedvolume": "Double",
+          "co2consumption": "Double",
+          "qainspectorlevel": "Double",
+          "qainspectorcap": "Double",
+          "qacapcounter": "Double",
+          "machinespeed": "Double",
+          "electricityconsumption": "Double",
+          "waterconsumption": "Double"
+        }
+      }
+    }
+  },
+  "Type": "Filler",
+  "Firmware": "1.0",
+  "FirmwareUpdateStatus": "0",
+  "Location": "Building 1",
+  "Latitude": "7.946527",
+  "Longitude": "-1.023194"
+}
